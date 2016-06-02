@@ -1,0 +1,21 @@
+{
+  "name": "markdown-editor",
+  "version": "0.0.1",
+  "description": "Editor markdown real time",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "markdown",
+    "editor"
+  ],
+  "author": "Everton Lima",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "redis": "^2.5.3",
+    "share": "^0.7.40"
+  }
+}

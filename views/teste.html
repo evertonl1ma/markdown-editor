@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apenas um teste</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<style>
+		.area {
+			outline: none;
+			border: none;
+			height: 500px;
+		}
+	    .result {
+	    	border-left: 2px solid silver;
+	    	height: 500px;
+	    }
+	</style>
+</head>
+<body>
+   <div class="jumbotron">
+   	  <textarea class="col-md-6 area">Everton</textarea>
+   	  <div class="col-md-6 result">aaa</div>
+   </div>
+   
+   <script src="https://cdn.rawgit.com/showdownjs/showdown/1.3.0/dist/showdown.min.js"></script>
+   <script>
+   window.onload= function() {
+	var converter= new showdown.Converter();
+	var pad= document.querySelector(".area");
+	var markdownArea= document.querySelector(".result");
+
+	var convertTextAreaToMarkdown= function() {
+		var markdownText= pad.value;
+		html= converter.makeHtml(markdownText);
+		markdownArea.innerHTML= html;
+	}
+
+	pad.addEventListener("input", convertTextAreaToMarkdown);
+}
+   </script>
+</body>
+</html>

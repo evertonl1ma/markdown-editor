@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html>  
+  <head> 
+    <title>Editor Markdown</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <h1 class="title">Editor Markdown</h1>
+      <section class="sidenav">
+         <a href="#" class="close glyphicon glyphicon-remove"></a>
+      	 <ul class="nav-list">
+      	   <li><a href="http://markdown-guide.readthedocs.io/en/latest/basics.html" target="_blank">Markdown Guide</a></li>
+      	   <li><a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Mastering Markdown</a></li>
+      	   <li><a href="http://www.mkdocs.org/" target="_blank">Mkdosc</a></li>
+      	 </ul>
+      </section>
+      <a href="#"  class="open glyphicon glyphicon-menu-hamburger"></a>
+
+      <section class="row">
+      	 <textarea class="col-md-6 full-height" id="pad">Write your text here.</textarea>
+      	 <div class="col-md-6 full-height" id="markdown"></div>
+      </section>
+    </div>
+
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.3.0/dist/showdown.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>  
