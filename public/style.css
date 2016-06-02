@@ -3,10 +3,6 @@ html, body, section {
 }
 
 
-.title {
-  text-align: center;
-}
-
 .sidenav {
   background: #111;
   position: fixed;
@@ -16,6 +12,10 @@ html, body, section {
   width: 0;
   overflow-x: hidden;
   transition: 0.5s;
+}
+
+.title {
+  text-align: center;
 }
 
 .open {
@@ -52,7 +52,7 @@ html, body, section {
 }
 
 
-.nav-list li a{
+.nav-list li a {
   text-decoration: none;
   font-size: 25px;
   color: #FFF;
