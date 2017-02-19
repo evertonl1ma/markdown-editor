@@ -13,7 +13,7 @@ app.get("/", function(request, response) {
 	response.render("pad");
 });
 
-// Mais um teste
+// Mais um teste e mais teste
 // escutando a porta 8000
 var port= process.env.PORT || 3000;     
 app.listen(port); 
